@@ -4,21 +4,16 @@ def separar_lista():
     print(lista)
     lista_pares=[]
     lista_impares=[]
-    for i in range (0,1,len(lista)):
-        if lista[i]%2==0:
-            aux=lista[i]
+    for i in range (len(lista)):
+        aux=lista[i]
+        if aux%2==0:
             lista_pares.append(aux)
         else:
-            aux=lista[i]
             lista_impares.append(aux)
     return lista_pares, lista_impares
 
 
 def main():
-    lista=[1,2,3,4,5,6,7,8,9]
     x,y=separar_lista()
     print(x,y)
-
-
-
 main()
