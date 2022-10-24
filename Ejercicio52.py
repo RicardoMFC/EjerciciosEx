@@ -34,11 +34,6 @@ def salida_ceros(numero_converso):
         numero_converso=int(numero_converso/10)
         j+=1
 
-
-
-
-
-
 def main():
     numero=introducir_num()
     numero_converso=conversion_numero(numero)
