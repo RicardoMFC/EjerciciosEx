@@ -1,3 +1,6 @@
+from ast import Assert
+
+
 def agregar_una_vez(lista, elemento):
     val=1
     for i in range (len(elemento)):
@@ -12,7 +15,7 @@ def agregar_una_vez(lista, elemento):
 
 def main():
     lista=list("Hola que haces")
-    elemento=list("gtr")
+    elemento=list("gtrh")
     lista=agregar_una_vez(lista, elemento)
     print(lista)
 main()
