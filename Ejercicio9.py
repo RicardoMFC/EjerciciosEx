@@ -1,18 +1,15 @@
 import sys
 
 def modificar(lista):
-    
-    for i in range (0,len(lista),1):
-        for j in range (0,len(lista),1):
+    for i in range (len(lista)):
+        for j in range (len(lista)):
             if lista[i]==lista[j] and i!=j:
-                lista=lista.pop(j)
-
-    return lista
-
+                lista[j]==' '
+    print(lista)
 
 
 def main():
-    lista=list(1357924688)
-    aux=modificar(lista)
-    print(aux)
+    lista=[1,2,3,5,4,6,7,8,9,9]
+    modificar(lista)
+
 main()
