@@ -13,7 +13,6 @@ def modificar(lista):
     suma=sum(lista2)
     lista2.insert(0,suma)
     print(lista2) 
-    
     return lista2
 
 def main():
