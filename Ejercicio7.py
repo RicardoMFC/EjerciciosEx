@@ -7,7 +7,7 @@ def agregar_una_vez(lista, elemento):
         for j in range (len(lista)):
             if elemento[i]==lista[j]:
                 val=0
-                assert(elemento==lista)
+                assert(elemento in lista)
         if val==1:
             lista.append(elemento[i])
 
@@ -15,7 +15,7 @@ def agregar_una_vez(lista, elemento):
 
 def main():
     lista=list("Hola que haces")
-    elemento=list("gtrh")
+    elemento=list("gtrr")
     lista=agregar_una_vez(lista, elemento)
     print(lista)
 main()
